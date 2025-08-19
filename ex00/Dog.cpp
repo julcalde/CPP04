@@ -6,11 +6,13 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 13:34:48 by julcalde          #+#    #+#             */
-/*   Updated: 2025/08/19 13:54:14 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/08/19 14:39:05 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
+#include <iostream>
+#include <string>
 
 Dog::Dog()
 {
@@ -28,7 +30,7 @@ Dog::Dog(const Dog& other) : Animal(other)
 	std::cout << "Dog copy constructor called!" << std::endl;
 }
 
-Dog& Doge::operator=(const Dog& other)
+Dog& Dog::operator=(const Dog& other)
 {
 	if (this != &other)
 	{

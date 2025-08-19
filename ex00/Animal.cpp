@@ -6,11 +6,13 @@
 /*   By: julcalde <julcalde@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 13:34:14 by julcalde          #+#    #+#             */
-/*   Updated: 2025/08/19 13:47:28 by julcalde         ###   ########.fr       */
+/*   Updated: 2025/08/19 14:38:57 by julcalde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
+#include <iostream>
+#include <string>
 
 Animal::Animal() : type("Animal")
 {
@@ -29,7 +31,7 @@ Animal::Animal(const Animal& other) : type(other.type)
 
 Animal& Animal::operator=(const Animal& other)
 {
-	if (this != other)
+	if (this != &other)
 	{
 		type = other.type;
 	}
@@ -37,7 +39,7 @@ Animal& Animal::operator=(const Animal& other)
 	return (*this);
 }
 
-std::String Animal::getType() const
+std::string Animal::getType() const
 {
 	return (type);
 }
