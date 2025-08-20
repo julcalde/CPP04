@@ -8,7 +8,9 @@ SRCS =		main.cpp \
 			AAnimal.cpp \
 			Cat.cpp \
 			Dog.cpp \
-			Brain.cpp
+			Brain.cpp \
+			WrongAnimal.cpp \
+			WrongCat.cpp
 			
 
 OBJS =		$(SRCS:.cpp=.o)
@@ -16,7 +18,9 @@ OBJS =		$(SRCS:.cpp=.o)
 HEADERS =	AAnimal.hpp \
 			Cat.hpp \
 			Dog.hpp \
-			Brain.hpp
+			Brain.hpp \
+			WrongAnimal.hpp \
+			WrongCat.hpp
 
 # ANSI color codes
 YELLOW = \033[1;33m
